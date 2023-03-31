@@ -5,15 +5,15 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <header>
     <div class='shadow'>
+      <RouterLink to='/'>
       <img alt="Li-Fire logo" class="logo" src="@/assets/logo.svg" width="250" height="250" />
+      </RouterLink>
     </div>
 
     <div class="wrapper">
-      <HelloWorld msg="Li-Fire"/>
-
+      <HelloWorld h1-text="Li-Fire" h3-text='Fire Suppression Systems'/>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <a href='mailto:info@Li-Fire.com'>Inquire</a>
       </nav>
     </div>
   </header>
@@ -21,7 +21,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
-<style lang='scss'  scoped>
+<style lang='scss' scoped>
 
 $vw-width: 30vw;
 $vw-height: calc(#{$vw-width} / (1/ 1));

@@ -1,4 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import "font.css";
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -19,16 +21,6 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
-
-@font-face {
-  font-family: Harabara;
-  src: url('src/assets/Harabara.woff');
-}
-
-@font-face {
-  font-family: Sansation;
-  src: url('src/assets/Sansation_Regular.woff');
 }
 
 /* semantic color variables for this project */

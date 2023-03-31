@@ -1,13 +1,13 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <slot name="icon"/>
     </i>
     <div class="details">
       <h3>
-        <slot name="heading"></slot>
+        <slot name="heading"/>
       </h3>
-      <slot></slot>
+      <slot/>
     </div>
   </div>
 </template>
@@ -50,8 +50,8 @@ h3 {
     top: calc(50% - 25px);
     left: -26px;
     position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
+    outline: 1px solid var(--color-border);
+    outline-offset: 10px;
     border-radius: 8px;
     width: 50px;
     height: 50px;
@@ -62,8 +62,8 @@ h3 {
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
-    bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
+    bottom: calc(50% + 36px);
+    height: calc(50% - 36px);
   }
 
   .item:after {
@@ -71,8 +71,8 @@ h3 {
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
+    top: calc(50% + 36px);
+    height: calc(50% - 36px);
   }
 
   .item:first-of-type:before {

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Harabara;
+    src: url('src/assets/Harabara.woff');
+}
+
+@font-face {
+    font-family: Sansation;
+    src: url('src/assets/Sansation_Regular.woff');
+}
+
+h1 {
+    font-family: Harabara,serif;
+    letter-spacing: 2px;
+}
