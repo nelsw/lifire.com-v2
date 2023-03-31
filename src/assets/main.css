@@ -2,12 +2,18 @@
 
 @font-face {
   font-family: Harabara;
-  src: url('src/assets/Harabara.woff');
+  src: url('public/Harabara.woff');
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Harabara"), url("public/Harabara.woff") format("woff");
 }
 
 @font-face {
   font-family: Sansation;
-  src: url('src/assets/Sansation_Regular.woff');
+  src: url('public/Sansation_Regular.woff');
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Sansation"), url("public/Sansation_Regular.woff") format("woff");
 }
 
 #app {

@@ -4,13 +4,13 @@ dev:
 	npm run start
 
 build:
-	npm run build
+	npm run build-only
 
 preview:
 	npm run preview
 
 sync:
-	aws s3 sync dist s3://li-fire.com --exact-timestamps --acl public-read --color on
+	aws s3 sync dist s3://li-fire.com --delete --exact-timestamps --acl public-read --color on
 
 wait:
 	sleep 5
